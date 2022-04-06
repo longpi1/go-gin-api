@@ -25,8 +25,8 @@ func init() {
 
 func main() {
 	fs := token.NewFileSet()
-	filePath := fmt.Sprintf("./internal/api/%s", handlerName)
-	parsedFile, err := decorator.ParseFile(fs, filePath+"/handler.go", nil, 0)
+	filePath := fmt.Sprintf("D:\\桌面\\项目\\开源项目\\go-gin-api\\internal\\api\\%s", handlerName)
+	parsedFile, err := decorator.ParseFile(fs, filePath+"\\handler.go", nil, 0)
 	if err != nil {
 		log.Fatalf("parsing package: %s: %s\n", filePath, err)
 	}
@@ -59,7 +59,7 @@ func main() {
 						continue
 					}
 
-					filepath := "./internal/api/" + handlerName
+					filepath := "D:\\桌面\\项目\\开源项目\\go-gin-api\\internal\\api\\" + handlerName
 					filename := fmt.Sprintf("%s/func_%s.go", filepath, strings.ToLower(v.Names[0].String()))
 					funcFile, err := os.OpenFile(filename, os.O_CREATE|os.O_TRUNC|os.O_RDWR, 0766)
 					if err != nil {
