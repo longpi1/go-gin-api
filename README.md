@@ -37,7 +37,4 @@
 
 调用的其他服务端 Demo 代码为 [https://github.com/xinliangnote/go-jaeger-demo](https://github.com/xinliangnote/go-jaeger-demo)
 
-## 联系作者
-
-![联系作者](https://i.loli.net/2021/07/02/cwiLQ13CRgJIS86.jpg)
 
